@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriculación</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <div class="jumbotron">
+        <h1 class="display-4">Matriculación</h1>
+        <p class="lead">Introduzca los datos de matrícula del alumno, la materia y el año académico.</p>
+    </div>
+
+    <div class="container">
+
+        <form action="matricula.php" method="post">
+            <div class="form-group">
+                <label for="nif">NIF:</label>
+                <input type="text" name="nif" id="nif" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" id="apellidos" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" class="form-control">
+            </div> 
+
+            <div class="form-group">
+                <label for="cod_materia">Código de materia:</label>
+                <input type="text" name="cod_materia" id="cod_materia" class="form-control">
+            </div> 
+
+            <div class="form-group">
+                <label for="ano">Año:</label>
+                <input type="number" name="ano" id="ano" class="form-control">
+            </div> 
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Matricular">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
