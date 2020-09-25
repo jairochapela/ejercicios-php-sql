@@ -1,14 +1,5 @@
 <?php
 
-echo "<ul>";
-echo "<li>" . $_POST['nif'] . "</li>";
-echo "<li>" . $_POST['nombre'] . "</li>";
-echo "<li>" . $_POST['apellidos'] . "</li>";
-echo "<li>" . $_POST['cod_materia'] . "</li>";
-echo "<li>" . $_POST['ano'] . "</li>";
-echo "</ul>";
-
-//hetgsfs
 
 // Conexión con la base de datos
 $mysqli = new mysqli("127.0.0.1", "root", "maria123", "academic", 3306);
